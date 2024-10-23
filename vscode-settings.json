@@ -1,6 +1,6 @@
 {
 	"editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
 	"editor.lineHeight": 1.5,
     "editor.insertSpaces": false,
     "editor.suggestSelection": "first",
@@ -26,6 +26,8 @@
 	"workbench.commandPalette.history": 20,
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.sideBar.location": "right",
+	"workbench.editor.languageDetection": false,
+	"workbench.editor.historyBasedLanguageDetection": false,
     "debug.console.fontSize": 12,
     "debug.console.fontFamily": "",
     "terminal.integrated.fontSize": 12,
@@ -41,4 +43,5 @@
 	"diffEditor.ignoreTrimWhitespace": true,
 	"diffEditor.renderSideBySide": true,
 	"security.workspace.trust.banner": "never",
+	"task.autoDetect": "off",
 }

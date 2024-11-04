@@ -1,6 +1,13 @@
 [
-	{"key": "ctrl+backspace","command": "deleteWordLeft"},
-	{"key": "ctrl+shift+backspace","command": "deleteWordRight","when": "textInputFocus && !editorReadonly"},
+	{
+		"key": "ctrl+backspace",
+		"command": "deleteWordLeft"
+	},
+	{
+		"key": "ctrl+shift+backspace",
+		"command": "deleteWordRight",
+		"when": "textInputFocus && !editorReadonly"
+	},
 	{
 		"key": "alt+right",
 		"command": "cursorLineEnd"

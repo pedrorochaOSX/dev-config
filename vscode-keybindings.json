@@ -205,6 +205,16 @@
 		"key": "ctrl+shift+j",
 		"command": "workbench.action.gotoSymbol"
 	},
+	{
+		"key": "ctrl+shift+alt+down",
+		"command": "cursorBottomSelect",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+shift+alt+up",
+		"command": "cursorTopSelect",
+		"when": "textInputFocus"
+	},
 	// Removed keybindings
 	{
 		"key": "shift+cmd+z",

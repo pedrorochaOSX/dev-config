@@ -15,11 +15,14 @@
     "editor.detectIndentation": false,
 	"editor.renderWhitespace": "selection",
 	"editor.stickyScroll.enabled": false,
+	"editor.cursorStyle": "block",
+
 	"window.menuBarVisibility": "visible",
 	"window.title": "${dirty}${separator}${activeEditorLong}",
 	"window.confirmSaveUntitledWorkspace": false,
 	"window.customTitleBarVisibility": "auto",
 	"window.titleBarStyle": "custom",
+
 	"workbench.editor.showTabs": "single",
 	"workbench.startupEditor": "none",
 	"workbench.editor.labelFormat" : "long",
@@ -28,20 +31,30 @@
 	"workbench.sideBar.location": "right",
 	"workbench.editor.languageDetection": false,
 	"workbench.editor.historyBasedLanguageDetection": false,
+
     "debug.console.fontSize": 12,
     "debug.console.fontFamily": "",
+
     "terminal.integrated.fontSize": 12,
 	"terminal.integrated.cursorStyle": "line",
+
     "markdown.preview.fontSize": 12,
+
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
+
     "files.autoSaveDelay": 5000,
     "files.autoSave": "afterDelay",
+
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	
     "security.workspace.trust.untrustedFiles": "open",
+	"security.workspace.trust.banner": "never",
+
 	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+
 	"diffEditor.ignoreTrimWhitespace": true,
 	"diffEditor.renderSideBySide": true,
-	"security.workspace.trust.banner": "never",
+	
 	"task.autoDetect": "off",
 }

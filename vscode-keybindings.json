@@ -215,6 +215,16 @@
 		"command": "cursorTopSelect",
 		"when": "textInputFocus"
 	},
+	{
+		"key": "ctrl+up",
+		"command": "cursorPageUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "cursorPageDown",
+		"when": "textInputFocus"
+	},
 	// Removed keybindings
 	{
 		"key": "shift+cmd+z",
@@ -2159,5 +2169,350 @@
 	{
 		"key": "alt+z",
 		"command": "-editor.action.toggleWordWrap"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-inlineChat.focus",
+		"when": "editorTextFocus && inlineChatVisible && !accessibilityModeEnabled && !inlineChatFocused && !isEmbeddedDiffEditor && inlineChatOuterCursorPosition == 'above'"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-interactive.input.focus",
+		"when": "isCompositeNotebook && notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-notebook.cell.focusInOutput",
+		"when": "isWindows && notebookCellHasOutputs && notebookEditorFocused && !isCompositeNotebook"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-notebook.focusNextEditor",
+		"when": "notebookEditorFocused && notebookOutputFocused"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-workbench.action.terminal.focus",
+		"when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-workbench.action.terminal.scrollToNextCommand",
+		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-chat.action.focus",
+		"when": "inChat && inChatInput && quickChatHasFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-commentsFocusViewFromFilter",
+		"when": "commentsFilterFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-inlineChat.arrowOutDown",
+		"when": "inlineChatFocused && inlineChatHasProvider && inlineChatInnerCursorLast && !accessibilityModeEnabled && !isEmbeddedDiffEditor"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-inlineChat.viewInChat",
+		"when": "inChatInput && inlineChatHasProvider && inlineChatVisible"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-keybindings.editor.focusKeybindings",
+		"when": "inKeybindings && inKeybindingsSearch"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-notebook.cell.chat.arrowOutDown",
+		"when": "inlineChatFocused && inlineChatInnerCursorLast && notebookCellChatFocused && !accessibilityModeEnabled && !notebookCellEditorFocused"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-notebook.cell.chat.focus",
+		"when": "notebookEditorFocused && !inputFocus && notebookChatOuterFocusPosition == 'above'"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-notebook.cell.chat.focusNextCell",
+		"when": "inlineChatFocused && notebookCellChatFocused"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-notebook.cell.focusNextChatWidget",
+		"when": "editorTextFocus && inputFocus && isCompositeNotebook && !accessibilityModeEnabled && !isEmbeddedDiffEditor && !notebookCellEditorFocused && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top' || editorTextFocus && inputFocus && notebookCellEditorFocused && !accessibilityModeEnabled && !isCompositeNotebook && !isEmbeddedDiffEditor && notebookEditorCursorAtBoundary != 'none' && notebookEditorCursorAtBoundary != 'top'"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-problems.action.focusProblemsFromFilter",
+		"when": "problemsFilterFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-quickInput.next",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-search.focus.nextInputBox",
+		"when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-selectNextCodeAction",
+		"when": "codeActionMenuVisible"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-selectNextSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-widgetNavigation.focusNext",
+		"when": "inputFocus && navigableContainerFocused || navigableContainerFocused && treestickyScrollFocused || navigableContainerFocused && !listFocus || navigableContainerFocused && listScrollAtBoundary == 'both' || navigableContainerFocused && listScrollAtBoundary == 'bottom'"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-workbench.action.chat.focusInput",
+		"when": "inChat && !inChatInput && !quickChatHasFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-editor.action.goToBottomHover",
+		"when": "editorHoverFocused"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-list.scrollDown",
+		"when": "listFocus && !inputFocus && !treestickyScrollFocused && listScrollAtBoundary != 'both' && listScrollAtBoundary != 'bottom'"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-scrollLineDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-editor.action.goToTopHover",
+		"when": "editorHoverFocused"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-inlineChat.focus",
+		"when": "editorTextFocus && inlineChatVisible && !accessibilityModeEnabled && !inlineChatFocused && !isEmbeddedDiffEditor && inlineChatOuterCursorPosition == 'below'"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-interactive.history.focus",
+		"when": "isCompositeNotebook && isLinux && !notebookEditorFocused || isCompositeNotebook && isWindows && !notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-interactive.history.focus",
+		"when": "isCompositeNotebook && !notebookEditorFocused && interactiveInputCursorAtBoundary != 'bottom' && interactiveInputCursorAtBoundary != 'none'"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-workbench.action.terminal.scrollToPreviousCommand",
+		"when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-chat.action.focus",
+		"when": "chatCursorAtTop && inChatInput && !quickChatHasFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-chat.action.focus",
+		"when": "inChatInput && isLinux && !quickChatHasFocus || inChatInput && isWindows && !quickChatHasFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-inlineChat.arrowOutUp",
+		"when": "inlineChatFocused && inlineChatHasProvider && inlineChatInnerCursorFirst && !accessibilityModeEnabled && !isEmbeddedDiffEditor"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-list.scrollUp",
+		"when": "listFocus && !inputFocus && !treestickyScrollFocused && listScrollAtBoundary != 'both' && listScrollAtBoundary != 'top'"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-notebook.cell.chat.arrowOutUp",
+		"when": "inlineChatFocused && inlineChatInnerCursorFirst && notebookCellChatFocused && !accessibilityModeEnabled && !notebookCellEditorFocused"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-notebook.cell.chat.focus",
+		"when": "notebookEditorFocused && !inputFocus && notebookChatOuterFocusPosition == 'below'"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-notebook.cell.chat.focusPreviousCell",
+		"when": "inlineChatFocused && notebookCellChatFocused"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-notebook.cell.focusChatWidget",
+		"when": "editorTextFocus && inputFocus && notebookEditorFocused && !accessibilityModeEnabled && !isEmbeddedDiffEditor && notebookEditorCursorAtBoundary != 'bottom' && notebookEditorCursorAtBoundary != 'none'"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-quickInput.previous",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-scrollLineUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-search.action.focusSearchFromResults",
+		"when": "accessibilityModeEnabled && searchViewletVisible || firstMatchFocus && searchViewletVisible"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-search.focus.previousInputBox",
+		"when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-selectPrevCodeAction",
+		"when": "codeActionMenuVisible"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-selectPrevSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-widgetNavigation.focusPrevious",
+		"when": "inputFocus && navigableContainerFocused || navigableContainerFocused && treestickyScrollFocused || navigableContainerFocused && !listFocus || navigableContainerFocused && listScrollAtBoundary == 'both' || navigableContainerFocused && listScrollAtBoundary == 'top'"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-workbench.action.chat.focusInput",
+		"when": "inChat && quickChatHasFocus && !inChatInput"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-workbench.action.terminal.focusAccessibleBuffer",
+		"when": "accessibilityModeEnabled && terminalFocus && terminalHasBeenCreated || accessibilityModeEnabled && terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+up",
+		"command": "-notebook.cell.focusOutOutput",
+		"when": "notebookEditorFocused && notebookOutputFocused"
+	},
+	{
+		"key": "ctrl+shift+up",
+		"command": "-workbench.action.terminal.scrollUp",
+		"when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+	},
+	{
+		"key": "ctrl+shift+up",
+		"command": "-workbench.action.terminal.selectToPreviousCommand",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+down",
+		"command": "-notebook.cell.focusInOutput",
+		"when": "notebookCellHasOutputs && notebookEditorFocused"
+	},
+	{
+		"key": "ctrl+shift+down",
+		"command": "-workbench.action.terminal.scrollDown",
+		"when": "terminalFocusInAny && terminalHasBeenCreated && !terminalAltBufferActive || terminalFocusInAny && terminalProcessSupported && !terminalAltBufferActive"
+	},
+	{
+		"key": "ctrl+shift+down",
+		"command": "-workbench.action.terminal.selectToNextCommand",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "pageup",
+		"command": "-notebook.cell.cursorPageUp",
+		"when": "editorTextFocus && inputFocus && notebookEditorFocused"
+	},
+	{
+		"key": "pageup",
+		"command": "-editor.action.pageUpHover",
+		"when": "editorHoverFocused"
+	},
+	{
+		"key": "pageup",
+		"command": "-list.focusPageUp",
+		"when": "listFocus && !inputFocus && !treestickyScrollFocused"
+	},
+	{
+		"key": "pageup",
+		"command": "-notifications.focusFirstToast",
+		"when": "notificationFocus && notificationToastsVisible"
+	},
+	{
+		"key": "pageup",
+		"command": "-quickInput.pagePrevious",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "pageup",
+		"command": "-selectPrevPageSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "pageup",
+		"command": "-workbench.action.interactivePlayground.pageUp",
+		"when": "interactivePlaygroundFocus && !editorTextFocus"
+	},
+	{
+		"key": "pageup",
+		"command": "-workbench.action.terminal.selectPrevPageSuggestion",
+		"when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+	},
+	{
+		"key": "pagedown",
+		"command": "-notebook.cell.cursorPageDown",
+		"when": "editorTextFocus && inputFocus && notebookEditorFocused"
+	},
+	{
+		"key": "pagedown",
+		"command": "-editor.action.pageDownHover",
+		"when": "editorHoverFocused"
+	},
+	{
+		"key": "pagedown",
+		"command": "-list.focusPageDown",
+		"when": "listFocus && !inputFocus && !treestickyScrollFocused"
+	},
+	{
+		"key": "pagedown",
+		"command": "-notifications.focusLastToast",
+		"when": "notificationFocus && notificationToastsVisible"
+	},
+	{
+		"key": "pagedown",
+		"command": "-quickInput.pageNext",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "pagedown",
+		"command": "-selectNextPageSuggestion",
+		"when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+	},
+	{
+		"key": "pagedown",
+		"command": "-workbench.action.interactivePlayground.pageDown",
+		"when": "interactivePlaygroundFocus && !editorTextFocus"
+	},
+	{
+		"key": "pagedown",
+		"command": "-workbench.action.terminal.selectNextPageSuggestion",
+		"when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
 	}
 ]

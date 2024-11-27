@@ -61,7 +61,7 @@
 		"command": "editor.emmet.action.removeTag"
 	},
 	{
-		"key": "ctrl+j",
+		"key": "ctrl+/",
 		"command": "workbench.action.gotoLine"
 	},
 	{
@@ -99,7 +99,7 @@
 		"when": "editorFocus || editorIsOpen"
 	},
 	{
-		"key": "ctrl+k f",
+		"key": "ctrl+shift+alt+w",
 		"command": "workbench.action.closeFolder",
 		"when": "emptyWorkspaceSupport && workbenchState != 'empty'"
 	},
@@ -190,7 +190,7 @@
 		"command": "editor.emmet.action.matchTag"
 	},
 	{
-		"key": "ctrl+shift+k ctrl+shift+s",
+		"key": "ctrl+shift+;",
 		"command": "workbench.action.openGlobalKeybindingsFile"
 	},
 	{
@@ -202,7 +202,7 @@
 		"command": "workbench.action.openSettingsJson"
 	},
 	{
-		"key": "ctrl+shift+j",
+		"key": "ctrl+shift+/",
 		"command": "workbench.action.gotoSymbol"
 	},
 	{
@@ -223,6 +223,70 @@
 	{
 		"key": "ctrl+down",
 		"command": "cursorPageDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "cursorUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "cursorDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "cursorLeft",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "cursorRight",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "workbench.action.files.openFolder",
+		"when": "openFolderWorkspaceSupport"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+down",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+shift+h",
+		"command": "cursorLeftSelect",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "cursorDownSelect",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+alt+j",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+alt+k",
+		"command": "cursorUpSelect",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+shift+l",
+		"command": "cursorRightSelect",
 		"when": "textInputFocus"
 	},
 	// Removed keybindings
@@ -2514,5 +2578,48 @@
 		"key": "pagedown",
 		"command": "-workbench.action.terminal.selectNextPageSuggestion",
 		"when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+k ctrl+s",
+		"command": "-workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "-workbench.action.files.openFolder",
+		"when": "openFolderWorkspaceSupport"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "-workbench.action.files.openLocalFolder",
+		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "ctrl+k ctrl+t",
+		"command": "-workbench.action.selectTheme"
+	},
+	{
+		"key": "ctrl+k z",
+		"command": "-workbench.action.toggleZenMode",
+		"when": "!isAuxiliaryWindowFocusedContext"
+	},
+	{
+		"key": "ctrl+k f",
+		"command": "-workbench.action.closeFolder",
+		"when": "emptyWorkspaceSupport && workbenchState != 'empty'"
+	},
+	{
+		"key": "ctrl+l",
+		"command": "-workbench.action.chat.newChat",
+		"when": "chatIsEnabled && inChat && chatLocation != 'editing-session'"
+	},
+	{
+		"key": "ctrl+alt+j",
+		"command": "-liveshare.join",
+		"when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+	},
+	{
+		"key": "alt+down",
+		"command": "-editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
 	}
 ]

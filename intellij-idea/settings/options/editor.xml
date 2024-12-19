@@ -1,0 +1,18 @@
+<application>
+  <component name="CodeVisionSettings">
+    <option name="defaultPosition" value="Right" />
+  </component>
+  <component name="EditorSettings">
+    <option name="TOOLTIPS_DELAY_MS" value="200" />
+    <option name="SHOW_BREADCRUMBS_ABOVE" value="true" />
+    <option name="IS_BLOCK_CURSOR" value="true" />
+    <option name="IS_FULL_LINE_HEIGHT_CURSOR" value="true" />
+    <option name="IS_HIGHLIGHT_SELECTION_OCCURRENCES" value="true" />
+    <option name="IS_WHITESPACES_SHOWN" value="true" />
+    <option name="IS_LEADING_WHITESPACES_SHOWN" value="false" />
+    <option name="IS_INNER_WHITESPACES_SHOWN" value="false" />
+    <option name="IS_TRAILING_WHITESPACES_SHOWN" value="false" />
+    <option name="IS_ANIMATED_SCROLLING" value="false" />
+    <option name="INSERT_PARENTHESES_AUTOMATICALLY" value="false" />
+  </component>
+</application>

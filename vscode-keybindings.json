@@ -128,10 +128,6 @@
 		"when": "inEditorsPicker && inQuickOpen"
 	},
 	{
-		"key": "ctrl+b",
-		"command": "workbench.action.toggleSidebarVisibility"
-	},
-	{
 		"key": "ctrl+shift+o",
 		"command": "workbench.action.files.openFolderViaWorkspace",
 		"when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
@@ -169,7 +165,7 @@
 		"when": "textInputFocus"
 	},
 	{
-		"key": "ctrl+g",
+		"key": "ctrl+shift+alt+f",
 		"command": "workbench.files.action.compareFileWith"
 	},
 	{
@@ -226,8 +222,13 @@
 		"when": "textInputFocus"
 	},
 	{
-		"key": "ctrl+k",
-		"command": "cursorUp",
+		"key": "alt+down",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+h",
+		"command": "cursorLeft",
 		"when": "textInputFocus"
 	},
 	{
@@ -236,33 +237,14 @@
 		"when": "textInputFocus"
 	},
 	{
-		"key": "ctrl+h",
-		"command": "cursorLeft",
+		"key": "ctrl+k",
+		"command": "cursorUp",
 		"when": "textInputFocus"
 	},
 	{
 		"key": "ctrl+l",
 		"command": "cursorRight",
 		"when": "textInputFocus"
-	},
-	{
-		"key": "ctrl+;",
-		"command": "workbench.action.openGlobalKeybindings"
-	},
-	{
-		"key": "ctrl+shift+o",
-		"command": "workbench.action.files.openFolder",
-		"when": "openFolderWorkspaceSupport"
-	},
-	{
-		"key": "ctrl+alt+k",
-		"command": "editor.action.moveLinesUpAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "alt+down",
-		"command": "editor.action.moveLinesDownAction",
-		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
 		"key": "ctrl+shift+h",
@@ -275,12 +257,7 @@
 		"when": "textInputFocus"
 	},
 	{
-		"key": "ctrl+alt+j",
-		"command": "editor.action.moveLinesDownAction",
-		"when": "editorTextFocus && !editorReadonly"
-	},
-	{
-		"key": "shift+alt+k",
+		"key": "ctrl+shift+k",
 		"command": "cursorUpSelect",
 		"when": "textInputFocus"
 	},
@@ -289,7 +266,45 @@
 		"command": "cursorRightSelect",
 		"when": "textInputFocus"
 	},
-	// Removed keybindings
+	{
+		"key": "ctrl+alt+j",
+		"command": "editor.action.moveLinesDownAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "editor.action.moveLinesUpAction",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "workbench.action.openGlobalKeybindings"
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "workbench.action.files.openFolder",
+		"when": "openFolderWorkspaceSupport"
+	},
+	{
+		"key": "ctrl+alt+n",
+		"command": "explorer.newFile"
+	},
+	{
+		"key": "ctrl+shift+alt+n",
+		"command": "explorer.newFolder"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "workbench.action.focusSideBar"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "workbench.action.closeSidebar"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
 	{
 		"key": "shift+cmd+z",
 		"command": "-redo"
@@ -2621,5 +2636,13 @@
 		"key": "alt+down",
 		"command": "-editor.action.moveLinesDownAction",
 		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "-redo"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
 	}
 ]

@@ -47,7 +47,7 @@
     "explorer.compactFolders": false,
 
     "files.autoSaveDelay": 5000,
-    "files.autoSave": "afterDelay",
+	"files.autoSave": "onFocusChange",
 
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	

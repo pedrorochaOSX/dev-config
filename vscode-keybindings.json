@@ -170,6 +170,10 @@
 		"command": "editor.emmet.action.matchTag"
 	},
 	{
+		"key": "ctrl+e",
+		"command": "workbench.actions.view.problems"
+	},
+	{
 		"key": "ctrl+shift+;",
 		"command": "workbench.action.openGlobalKeybindingsFile"
 	},
@@ -2643,10 +2647,6 @@
 		"key": "ctrl+shift+alt+l",
 		"command": "-workbench.action.quickchat.toggle",
 		"when": "chatIsEnabled"
-	},
-	{
-		"key": "ctrl+e",
-		"command": "workbench.actions.view.problems"
 	},
 	{
 		"key": "ctrl+alt+i",

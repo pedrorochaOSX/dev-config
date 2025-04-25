@@ -45,11 +45,11 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+e",
+		"key": "ctrl+shift+alt+d",
 		"command": "editor.emmet.action.wrapWithAbbreviation"
 	},
 	{
-		"key": "ctrl+shift+e",
+		"key": "ctrl+shift+alt+x",
 		"command": "editor.emmet.action.removeTag"
 	},
 	{
@@ -2643,5 +2643,14 @@
 		"key": "ctrl+shift+alt+l",
 		"command": "-workbench.action.quickchat.toggle",
 		"when": "chatIsEnabled"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "workbench.actions.view.problems"
+	},
+	{
+		"key": "ctrl+alt+i",
+		"command": "-workbench.panel.chat",
+		"when": "workbench.panel.chat.view.copilot.active"
 	}
 ]

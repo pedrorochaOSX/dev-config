@@ -49,8 +49,6 @@
     "files.autoSaveDelay": 5000,
 	"files.autoSave": "onFocusChange",
 
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-	
     "security.workspace.trust.untrustedFiles": "open",
 	"security.workspace.trust.banner": "never",
 	

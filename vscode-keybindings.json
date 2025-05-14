@@ -110,6 +110,10 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
+		"key": "ctrl+shift+v",
+		"command": "editor.action.commentLine"
+	},
+	{
 		"key": "ctrl+tab",
 		"command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
 		"when": "!activeEditorGroupEmpty"

@@ -91,7 +91,7 @@
 		"when": "editorFocus || editorIsOpen"
 	},
 	{
-		"key": "ctrl+q+a",
+		"key": "ctrl+q ctrl+a",
 		"command": "workbench.action.closeFolder",
 		"when": "emptyWorkspaceSupport && workbenchState != 'empty'"
 	},
@@ -157,7 +157,7 @@
 		"when": "textInputFocus"
 	},
 	{
-		"key": "ctrl+shift+/",
+		"key": "ctrl+shift+]",
 		"command": "workbench.files.action.compareFileWith"
 	},
 	{

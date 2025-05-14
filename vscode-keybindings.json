@@ -45,11 +45,11 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+shift+alt+d",
+		"key": "ctrl+u",
 		"command": "editor.emmet.action.wrapWithAbbreviation"
 	},
 	{
-		"key": "ctrl+shift+alt+x",
+		"key": "ctrl+y",
 		"command": "editor.emmet.action.removeTag"
 	},
 	{
@@ -65,11 +65,11 @@
 		"command": "editor.action.fontZoomIn"
 	},
 	{
-		"key": "ctrl+shift+alt+-",
+		"key": "ctrl+9",
 		"command": "workbench.action.zoomOut"
 	},
 	{
-		"key": "ctrl+shift+alt+=",
+		"key": "ctrl+0",
 		"command": "workbench.action.zoomIn"
 	},
 	{
@@ -91,7 +91,7 @@
 		"when": "editorFocus || editorIsOpen"
 	},
 	{
-		"key": "ctrl+shift+alt+w",
+		"key": "ctrl+q+a",
 		"command": "workbench.action.closeFolder",
 		"when": "emptyWorkspaceSupport && workbenchState != 'empty'"
 	},
@@ -101,7 +101,7 @@
 		"when": "textInputFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+shift+alt+i",
+		"key": "ctrl+shift+.",
 		"command": "editor.action.reindentselectedlines"
 	},
 	{
@@ -157,7 +157,7 @@
 		"when": "textInputFocus"
 	},
 	{
-		"key": "ctrl+shift+alt+f",
+		"key": "ctrl+shift+/",
 		"command": "workbench.files.action.compareFileWith"
 	},
 	{
@@ -188,16 +188,6 @@
 	{
 		"key": "ctrl+shift+/",
 		"command": "workbench.action.gotoSymbol"
-	},
-	{
-		"key": "ctrl+shift+alt+down",
-		"command": "cursorBottomSelect",
-		"when": "textInputFocus"
-	},
-	{
-		"key": "ctrl+shift+alt+up",
-		"command": "cursorTopSelect",
-		"when": "textInputFocus"
 	},
 	{
 		"key": "ctrl+up",
@@ -286,7 +276,7 @@
 		"command": "workbench.action.focusSideBar"
 	},
 	{
-		"key": "ctrl+y",
+		"key": "ctrl+t",
 		"command": "workbench.action.focusActiveEditorGroup"
 	},
 	{

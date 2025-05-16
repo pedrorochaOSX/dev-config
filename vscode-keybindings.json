@@ -49,11 +49,11 @@
 		"when": "editorFocus || editorIsOpen"
 	},
 	{
-		"key": "ctrl+t",
+		"key": "ctrl+y",
 		"command": "filesExplorer.findInFolder"
 	},
 	{
-		"key": "ctrl+y",
+		"key": "ctrl+u",
 		"command": "workbench.files.action.compareFileWith"
 	},
 	{
@@ -105,7 +105,7 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+u",
+		"key": "ctrl+t",
 		"command": "workbench.action.files.newUntitledFile"
 	},
 	{
@@ -1191,13 +1191,13 @@
 		"when": "notebookEditorFocused && !inputFocus"
 	},
 	{
-		"key": "ctrl+shift+alt+up",
-		"command": "-editor.action.copyLinesUpAction",
+		"key": "shift+alt+up",
+		"command": "editor.action.copyLinesUpAction",
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+shift+alt+down",
-		"command": "-editor.action.copyLinesDownAction",
+		"key": "shift+alt+down",
+		"command": "editor.action.copyLinesDownAction",
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{

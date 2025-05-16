@@ -105,10 +105,6 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+1",
-		"command": "workbench.actions.view.problems"
-	},
-	{
 		"key": "ctrl+u",
 		"command": "workbench.action.files.newUntitledFile"
 	},
@@ -163,19 +159,23 @@
 		"command": "workbench.action.increaseViewWidth"
 	},
 	{
-		"key": "ctrl+5",
+		"key": "ctrl+1",
+		"command": "workbench.actions.view.problems"
+	},
+	{
+		"key": "ctrl+2",
 		"command": "workbench.action.openSettings"
 	},
 	{
-		"key": "ctrl+shift+5",
+		"key": "ctrl+shift+2",
 		"command": "workbench.action.openSettingsJson"
 	},
 	{
-		"key": "ctrl+6",
+		"key": "ctrl+3",
 		"command": "workbench.action.openGlobalKeybindings"
 	},
 	{
-		"key": "ctrl+shift+6",
+		"key": "ctrl+shift+3",
 		"command": "workbench.action.openGlobalKeybindingsFile"
 	},
 	{

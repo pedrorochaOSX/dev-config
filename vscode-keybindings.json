@@ -95,12 +95,12 @@
 		"when": "editorTextFocus"
 	},
 	{
-	    "key": "ctrl+]",
+	    "key": "ctrl+.",
 	    "command": "editor.action.indentLines",
 	    "when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+[",
+		"key": "ctrl+,",
 		"command": "editor.action.outdentLines",
 		"when": "editorTextFocus && !editorReadonly"
 	},
@@ -163,19 +163,19 @@
 		"command": "workbench.action.increaseViewWidth"
 	},
 	{
-		"key": "ctrl+,",
+		"key": "ctrl+5",
 		"command": "workbench.action.openSettings"
 	},
 	{
-		"key": "ctrl+shift+,",
+		"key": "ctrl+shift+5",
 		"command": "workbench.action.openSettingsJson"
 	},
 	{
-		"key": "ctrl+.",
+		"key": "ctrl+6",
 		"command": "workbench.action.openGlobalKeybindings"
 	},
 	{
-		"key": "ctrl+shift+.",
+		"key": "ctrl+shift+6",
 		"command": "workbench.action.openGlobalKeybindingsFile"
 	},
 	{

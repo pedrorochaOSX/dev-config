@@ -20,7 +20,7 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+space",
+		"key": "ctrl+alt+space",
 		"command": "workbench.action.showCommands"
 	},
 	{
@@ -40,8 +40,12 @@
 		"command": "redo"
 	},
 	{
-		"key": "ctrl+e",
+		"key": "ctrl+space",
 		"command": "editor.action.commentLine"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "expandLineSelection"
 	},
 	{
 		"key": "ctrl+d",
@@ -57,10 +61,6 @@
 		"key": "ctrl+g",
 		"command": "editor.action.startFindReplaceAction",
 		"when": "editorFocus || editorIsOpen"
-	},
-	{
-		"key": "ctrl+y",
-		"command": "filesExplorer.findInFolder"
 	},
 	{
 		"key": "ctrl+u",
@@ -94,6 +94,10 @@
 		"key": "ctrl+r",
 		"command": "renameFile",
 		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "workbench.action.quickTextSearch"
 	},
 	{
 		"key": "ctrl+/",
@@ -174,22 +178,18 @@
 	},
 	{
 		"key": "ctrl+1",
-		"command": "workbench.actions.view.problems"
-	},
-	{
-		"key": "ctrl+2",
 		"command": "workbench.action.openSettings"
 	},
 	{
-		"key": "ctrl+shift+2",
+		"key": "ctrl+shift+1",
 		"command": "workbench.action.openSettingsJson"
 	},
 	{
-		"key": "ctrl+3",
+		"key": "ctrl+2",
 		"command": "workbench.action.openGlobalKeybindings"
 	},
 	{
-		"key": "ctrl+shift+3",
+		"key": "ctrl+shift+2",
 		"command": "workbench.action.openGlobalKeybindingsFile"
 	},
 	{
@@ -2653,5 +2653,19 @@
 		"key": "ctrl+o",
 		"command": "-workbench.action.files.openLocalFile",
 		"when": "remoteFileDialogVisible"
+	},
+	{
+		"key": "ctrl+alt+space",
+		"command": "-toggleSuggestionFocus",
+		"when": "suggestWidgetVisible && textInputFocus"
+	},
+	{
+		"key": "ctrl+alt+space",
+		"command": "-workbench.action.terminal.suggestToggleDetailsFocus",
+		"when": "!textInputFocus"
+	},
+	{
+		"key": "ctrl+,",
+		"command": "-workbench.action.openSettings"
 	}
 ]

@@ -48,9 +48,13 @@
 		"command": "expandLineSelection"
 	},
 	{
-		"key": "ctrl+d",
+		"key": "ctrl+d ctrl+d",
 		"command": "editor.action.deleteLines",
 		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+d ctrl+w",
+		"command": "deleteInsideWord"
 	},
 	{
 		"key": "ctrl+f",
@@ -169,11 +173,11 @@
 		"command": "workbench.action.zoomIn"
 	},
 	{
-		"key": "ctrl+9",
+		"key": "ctrl+alt+oem_minus",
 		"command": "workbench.action.decreaseViewWidth"
 	},
 	{
-		"key": "ctrl+0",
+		"key": "ctrl+alt+oem_plus",
 		"command": "workbench.action.increaseViewWidth"
 	},
 	{
@@ -2667,5 +2671,9 @@
 	{
 		"key": "ctrl+,",
 		"command": "-workbench.action.openSettings"
+	},
+	{
+		"key": "ctrl+shift+oem_period",
+		"command": "editor.action.reindentselectedlines"
 	}
 ]

@@ -17,6 +17,14 @@
 	"editor.stickyScroll.enabled": false,
 	"editor.cursorStyle": "block",
 	"editor.fastScrollSensitivity": 20,
+	"editor.bracketPairColorization.enabled": true,
+	"editor.semanticTokenColorCustomizations": {
+	
+	},
+	
+	"editor.tokenColorCustomizations": {
+	
+	},
 
 	"window.menuBarVisibility": "visible",
 	"window.title": "${dirty}${separator}${activeEditorLong}",
@@ -33,6 +41,12 @@
 	"workbench.editor.languageDetection": false,
 	"workbench.editor.historyBasedLanguageDetection": false,
 	"workbench.list.fastScrollSensitivity": 20,
+	"workbench.panel.showLabels": false,
+	"workbench.colorCustomizations": {
+
+	},
+
+	"workbench.colorTheme": "Default Dark Modern",
 	
     "debug.console.fontSize": 12,
     "debug.console.fontFamily": "",

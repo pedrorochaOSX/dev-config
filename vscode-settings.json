@@ -43,11 +43,38 @@
 	"workbench.list.fastScrollSensitivity": 20,
 	"workbench.panel.showLabels": false,
 	"workbench.colorCustomizations": {
+		"menu.border":"#111111",
+		"menu.background":"#111111",
 
+		"editor.background": "#050505",
+		"editor.lineHighlightBackground": "#181818",
+		"editor.lineHighlightBorder": "#181818",
+		"editorCursor.background": "#181818",
+		"editorCursor.foreground": "#aaaaaa",
+		"editor.wordHighlightBackground": "#25252500",
+		"editor.selectionBackground": "#353535",
+		"editorBracketMatch.border": "#00000000",
+
+		"scrollbarSlider.background": "#555555",
+		
+		"sideBar.border":"#181818",
+		"sideBar.background": "#181818",
+		
+		"activityBar.background": "#181818", 
+		"activityBar.border": "#181818",
+		
+		"statusBar.background": "#050505",
+		"statusBar.foreground":"#fafafa",
+		"statusBar.border": "#050505",
+		
+		"breadcrumb.background": "#151515",
+		
+		"button.background": "#333333",
+
+		"list.activeSelectionBackground":"#555555",
+		"list.focusAndSelectionOutline":"#555555",
 	},
 
-	"workbench.colorTheme": "Default Dark Modern",
-	
     "debug.console.fontSize": 12,
     "debug.console.fontFamily": "",
 	

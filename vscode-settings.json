@@ -18,6 +18,12 @@
 	"editor.cursorStyle": "block",
 	"editor.fastScrollSensitivity": 20,
 	"editor.bracketPairColorization.enabled": false,
+	"editor.scrollbar.verticalScrollbarSize": 7,
+	"editor.scrollbar.vertical": "visible",
+	"editor.scrollbar.horizontalScrollbarSize": 7,
+	"editor.scrollBeyondLastLine": false,
+	"editor.scrollbar.horizontal": "visible",
+	"editor.scrollBeyondLastColumn": 0,
 	"editor.semanticTokenColorCustomizations": {
 		"rules": {
 			"variable": "#EEEEEE",

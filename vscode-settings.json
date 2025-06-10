@@ -17,13 +17,78 @@
 	"editor.stickyScroll.enabled": false,
 	"editor.cursorStyle": "block",
 	"editor.fastScrollSensitivity": 20,
-	"editor.bracketPairColorization.enabled": true,
+	"editor.bracketPairColorization.enabled": false,
 	"editor.semanticTokenColorCustomizations": {
-	
+		"rules": {
+			"variable": "#EEEEEE",
+			"function": "#EEEEEE",
+			"method": "#ffb89c",
+		}
 	},
-	
 	"editor.tokenColorCustomizations": {
-	
+		"textMateRules": [
+			{
+				"scope":"variable",
+				"settings": {
+					"foreground": "#FFFFFF"
+				},
+			},
+			{
+				"scope":"variable.name",
+				"settings": {
+					"foreground": "#FFFFFF"
+				},
+			},
+			{
+				"scope":"constant",
+				"settings": {
+					"foreground": "#94aaff"
+				},
+			},
+			{
+				"scope":"string",
+				"settings": {
+					"foreground": "#DDDDDD"
+				},
+			},
+			{
+				"scope":"comment",
+				"settings": {
+					"foreground": "#A1A1A1"
+				},
+			},
+			{
+				"scope":"keyword.control",
+				"settings": {
+					"foreground": "#ff8a8a"
+				},
+			},
+			{
+				"scope":"keyword.operator",
+				"settings": {
+					"foreground": "#DDDDDD"
+				},
+			},
+			{
+				"scope":"keyword.operator.logical",
+				"settings": {
+					"foreground": "#DDDDDD"
+				},
+			},
+			{
+				"scope":"support.type",
+				"settings": {
+					"foreground": "#ffc99c"
+				},
+			},
+			{
+				"scope":"support.type.property-name",
+				"settings": {
+					"foreground": "#fff780"
+				},
+			},
+			
+		]
 	},
 
 	"window.menuBarVisibility": "visible",
@@ -52,7 +117,7 @@
 		"editorCursor.background": "#181818",
 		"editorCursor.foreground": "#aaaaaa",
 		"editor.wordHighlightBackground": "#25252500",
-		"editor.selectionBackground": "#353535",
+		"editor.selectionBackground": "#555555",
 		"editorBracketMatch.border": "#00000000",
 
 		"scrollbarSlider.background": "#555555",
@@ -63,9 +128,9 @@
 		"activityBar.background": "#181818", 
 		"activityBar.border": "#181818",
 		
-		"statusBar.background": "#050505",
+		"statusBar.background": "#181818",
 		"statusBar.foreground":"#fafafa",
-		"statusBar.border": "#050505",
+		"statusBar.border": "#181818",
 		
 		"breadcrumb.background": "#151515",
 		
@@ -87,9 +152,8 @@
     "explorer.confirmDelete": false,
     "explorer.compactFolders": false,
 
-    "files.autoSaveDelay": 5000,
-	"files.autoSave": "onFocusChange",
-
+	"files.autoSave": "off",
+	
     "security.workspace.trust.untrustedFiles": "open",
 	"security.workspace.trust.banner": "never",
 	

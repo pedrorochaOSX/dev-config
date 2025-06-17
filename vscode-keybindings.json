@@ -135,7 +135,7 @@
 		"command": "workbench.action.files.openFolder"
 	},
 	{
-		"key": "ctrl+q ctrl+q",
+		"key": "ctrl+w",
 		"command": "workbench.action.closeActiveEditor"
 	},
 	{

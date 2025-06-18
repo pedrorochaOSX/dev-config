@@ -44,7 +44,7 @@
 		"command": "editor.action.commentLine"
 	},
 	{
-		"key": "ctrl+e",
+		"key": "ctrl+g",
 		"command": "expandLineSelection"
 	},
 	{
@@ -59,11 +59,6 @@
 	{
 		"key": "ctrl+f",
 		"command": "actions.find",
-		"when": "editorFocus || editorIsOpen"
-	},
-	{
-		"key": "ctrl+g",
-		"command": "editor.action.startFindReplaceAction",
 		"when": "editorFocus || editorIsOpen"
 	},
 	{
@@ -113,14 +108,18 @@
 		"when": "editorTextFocus"
 	},
 	{
-	    "key": "ctrl+.",
+		"key": "ctrl+e",
+		"command": "editor.action.outdentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+r",
 	    "command": "editor.action.indentLines",
 	    "when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+,",
-		"command": "editor.action.outdentLines",
-		"when": "editorTextFocus && !editorReadonly"
+		"key": "ctrl+shift+r",
+		"command": "editor.action.reindentselectedlines"
 	},
 	{
 		"key": "ctrl+t",
@@ -2673,7 +2672,8 @@
 		"command": "-workbench.action.openSettings"
 	},
 	{
-		"key": "ctrl+shift+oem_period",
-		"command": "editor.action.reindentselectedlines"
+		"key": "ctrl+shift+r",
+		"command": "-workbench.action.tasks.rerunForActiveTerminal",
+		"when": "taskTerminalActive && terminalFocus"
 	}
 ]

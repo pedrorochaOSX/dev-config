@@ -20,8 +20,13 @@
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+alt+space",
+		"key": "ctrl+space",
 		"command": "workbench.action.showCommands"
+	},
+	{
+		"key": "ctrl+space",
+		"command": "workbench.action.closeQuickOpen",
+		"when": "inQuickOpen"
 	},
 	{
 		"key": "ctrl+backspace",
@@ -40,7 +45,7 @@
 		"command": "redo"
 	},
 	{
-		"key": "ctrl+space",
+		"key": "ctrl+d ctrl+c",
 		"command": "editor.action.commentLine"
 	},
 	{
@@ -132,6 +137,15 @@
 	{
 		"key": "ctrl+o",
 		"command": "workbench.action.files.openFolder"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "workbench.action.quickOpenNavigateNextInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
 	},
 	{
 		"key": "ctrl+w",
@@ -2606,15 +2620,6 @@
 		"when": "terminalFocus"
 	},
 	{
-		"key": "ctrl+p",
-		"command": "-workbench.action.quickOpen"
-	},
-	{
-		"key": "ctrl+p",
-		"command": "-workbench.action.quickOpenNavigateNextInFilePicker",
-		"when": "inFilesPicker && inQuickOpen"
-	},
-	{
 		"key": "ctrl+shift+p",
 		"command": "-workbench.action.showCommands"
 	},
@@ -2675,5 +2680,10 @@
 		"key": "ctrl+shift+r",
 		"command": "-workbench.action.tasks.rerunForActiveTerminal",
 		"when": "taskTerminalActive && terminalFocus"
+	},
+	{
+		"key": "escape",
+		"command": "-workbench.action.closeQuickOpen",
+		"when": "inQuickOpen"
 	}
 ]

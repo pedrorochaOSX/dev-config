@@ -57,12 +57,12 @@
 					"foreground": "#DDDDDD"
 				},
 			},
-			{
-				"scope":"comment",
-				"settings": {
-					"foreground": "#A1A1A1"
-				},
-			},
+			// {
+			// 	"scope":"comment",
+			// 	"settings": {
+			// 		"foreground": "#A1A1A1"
+			// 	},
+			// },
 			{
 				"scope":"keyword.control",
 				"settings": {
@@ -96,19 +96,16 @@
 			
 		]
 	},
-
-	"window.menuBarVisibility": "visible",
 	"window.title": "${dirty}${separator}${activeEditorLong}",
 	"window.confirmSaveUntitledWorkspace": false,
 	"window.customTitleBarVisibility": "auto",
 	"window.titleBarStyle": "custom",
 	
-	"workbench.editor.showTabs": "single",
+	"workbench.editor.showTabs": "none",
 	"workbench.startupEditor": "none",
 	"workbench.editor.labelFormat" : "long",
 	"workbench.commandPalette.history": 20,
 	"workbench.editor.empty.hint": "hidden",
-	"workbench.sideBar.location": "right",
 	"workbench.editor.languageDetection": false,
 	"workbench.editor.historyBasedLanguageDetection": false,
 	"workbench.list.fastScrollSensitivity": 20,
@@ -169,4 +166,10 @@
 	"diffEditor.renderSideBySide": true,
 	
 	"task.autoDetect": "off",
+	"workbench.sideBar.location": "right",
+	"window.menuBarVisibility": "compact",
+	"workbench.layoutControl.enabled": false,
+	"chat.commandCenter.enabled": false,
+	"workbench.navigationControl.enabled": false,
+	"window.commandCenter": false,
 }

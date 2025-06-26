@@ -98,8 +98,6 @@
 	},
 	"window.title": "${dirty}${separator}${activeEditorLong}",
 	"window.confirmSaveUntitledWorkspace": false,
-	"window.customTitleBarVisibility": "auto",
-	"window.titleBarStyle": "custom",
 	
 	"workbench.editor.showTabs": "none",
 	"workbench.startupEditor": "none",
@@ -109,7 +107,6 @@
 	"workbench.editor.languageDetection": false,
 	"workbench.editor.historyBasedLanguageDetection": false,
 	"workbench.list.fastScrollSensitivity": 20,
-	"workbench.panel.showLabels": false,
 	"workbench.colorCustomizations": {
 		"menu.border":"#111111",
 		"menu.background":"#111111",
@@ -125,15 +122,15 @@
 
 		"scrollbarSlider.background": "#555555",
 		
-		"sideBar.border":"#181818",
-		"sideBar.background": "#181818",
+		"sideBar.border":"#1f1f1f",
+		"sideBar.background": "#1f1f1f",
 		
-		"activityBar.background": "#181818", 
-		"activityBar.border": "#181818",
+		"activityBar.background": "#1f1f1f", 
+		"activityBar.border": "#1f1f1f",
 		
-		"statusBar.background": "#181818",
-		"statusBar.foreground":"#fafafa",
-		"statusBar.border": "#181818",
+		"statusBar.background": "#1f1f1f",
+		"statusBar.foreground":"#AAAAAA",
+		"statusBar.border": "#1f1f1f",
 		
 		"breadcrumb.background": "#151515",
 		
@@ -167,9 +164,14 @@
 	
 	"task.autoDetect": "off",
 	"workbench.sideBar.location": "right",
-	"window.menuBarVisibility": "compact",
-	"workbench.layoutControl.enabled": false,
-	"chat.commandCenter.enabled": false,
 	"workbench.navigationControl.enabled": false,
+	"github.copilot.nextEditSuggestions.enabled": false,
+	"window.menuBarVisibility": "compact",
+	"window.menuStyle": "custom",
 	"window.commandCenter": false,
+	"workbench.layoutControl.enabled": false,
+	"extensions.autoUpdate": false,
+	"extensions.autoCheckUpdates": false,
+	"update.mode": "none",
+	"extensions.ignoreRecommendations": true,
 }

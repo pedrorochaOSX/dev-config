@@ -98,8 +98,6 @@
 	},
 	"window.title": "${dirty}${separator}${activeEditorLong}",
 	"window.confirmSaveUntitledWorkspace": false,
-	
-	"workbench.editor.showTabs": "none",
 	"workbench.startupEditor": "none",
 	"workbench.editor.labelFormat" : "long",
 	"workbench.commandPalette.history": 20,
@@ -174,4 +172,7 @@
 	"extensions.autoCheckUpdates": false,
 	"update.mode": "none",
 	"extensions.ignoreRecommendations": true,
+	"workbench.editor.tabSizing": "fixed",
+	"window.density.editorTabHeight": "compact",
+	"breadcrumbs.enabled": false,
 }

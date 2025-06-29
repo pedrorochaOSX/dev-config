@@ -1,5 +1,7 @@
 {
 	"editor.fontFamily": "JetBrains Mono",
+	"editor.fontWeight": "300",
+	"editor.fontLigatures": false,
     "editor.fontSize": 16,
 	"editor.lineHeight": 1.5,
     "editor.insertSpaces": false,
@@ -57,12 +59,12 @@
 					"foreground": "#DDDDDD"
 				},
 			},
-			// {
-			// 	"scope":"comment",
-			// 	"settings": {
-			// 		"foreground": "#A1A1A1"
-			// 	},
-			// },
+			{
+				"scope":"comment",
+				"settings": {
+					"foreground": "#646464"
+				},
+			},
 			{
 				"scope":"keyword.control",
 				"settings": {

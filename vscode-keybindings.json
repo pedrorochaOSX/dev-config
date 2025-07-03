@@ -193,22 +193,22 @@
 		"key": "ctrl+alt+oem_plus",
 		"command": "workbench.action.increaseViewWidth"
 	},
-	{
-		"key": "ctrl+1",
-		"command": "editor.debug.action.goToPreviousBreakpoint"
-	},
-	{
-		"key": "ctrl+2",
-		"command": "editor.debug.action.goToNextBreakpoint"
-	},
-	{
-		"key": "ctrl+3",
-		"command": "editor.debug.action.toggleBreakpoint"
-	},
-	{
-		"key": "ctrl+4",
-		"command": "workbench.debug.viewlet.action.removeAllBreakpoints"
-	},
+	// {
+	// 	"key": "ctrl+1",
+	// 	"command": "editor.debug.action.goToPreviousBreakpoint"
+	// },
+	// {
+	// 	"key": "ctrl+2",
+	// 	"command": "editor.debug.action.goToNextBreakpoint"
+	// },
+	// {
+	// 	"key": "ctrl+3",
+	// 	"command": "editor.debug.action.toggleBreakpoint"
+	// },
+	// {
+	// 	"key": "ctrl+4",
+	// 	"command": "workbench.debug.viewlet.action.removeAllBreakpoints"
+	// },
 	{
 		"key": "ctrl+5",
 		"command": "workbench.action.togglePanel"

@@ -170,6 +170,14 @@
 		"when": "inEditorsPicker && inQuickOpen"
 	},
 	{
+		"key": "ctrl+oem_comma",
+		"command": "workbench.action.decreaseViewWidth"
+	},
+	{
+		"key": "ctrl+oem_period",
+		"command": "workbench.action.increaseViewWidth"
+	},
+	{
 		"key": "ctrl+-",
 		"command": "editor.action.fontZoomOut"
 	},
@@ -185,30 +193,6 @@
 		"key": "ctrl+shift+=",
 		"command": "workbench.action.zoomIn"
 	},
-	{
-		"key": "ctrl+alt+oem_minus",
-		"command": "workbench.action.decreaseViewWidth"
-	},
-	{
-		"key": "ctrl+alt+oem_plus",
-		"command": "workbench.action.increaseViewWidth"
-	},
-	// {
-	// 	"key": "ctrl+1",
-	// 	"command": "editor.debug.action.goToPreviousBreakpoint"
-	// },
-	// {
-	// 	"key": "ctrl+2",
-	// 	"command": "editor.debug.action.goToNextBreakpoint"
-	// },
-	// {
-	// 	"key": "ctrl+3",
-	// 	"command": "editor.debug.action.toggleBreakpoint"
-	// },
-	// {
-	// 	"key": "ctrl+4",
-	// 	"command": "workbench.debug.viewlet.action.removeAllBreakpoints"
-	// },
 	{
 		"key": "ctrl+5",
 		"command": "workbench.action.togglePanel"
@@ -2710,5 +2694,35 @@
 		"key": "ctrl+shift+oem_comma",
 		"command": "-workbench.action.terminal.configureSuggestSettings",
 		"when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+	},
+	{
+		"key": "ctrl+oem_period",
+		"command": "-workbench.action.chat.toggleAgentMode",
+		"when": "chatIsEnabled && inChatInput && !chatSessionRequestInProgress && chatLocation == 'panel'"
+	},
+	{
+		"key": "ctrl+oem_period",
+		"command": "-editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+oem_period",
+		"command": "-acceptSelectedCodeAction",
+		"when": "codeActionMenuVisible"
+	},
+	{
+		"key": "ctrl+oem_period",
+		"command": "-editor.changeDropType",
+		"when": "dropWidgetVisible"
+	},
+	{
+		"key": "ctrl+oem_period",
+		"command": "-editor.changePasteType",
+		"when": "pasteWidgetVisible"
+	},
+	{
+		"key": "ctrl+oem_period",
+		"command": "-problems.action.showQuickFixes",
+		"when": "problemFocus"
 	}
 ]

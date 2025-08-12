@@ -83,21 +83,17 @@
 		"command": "workbench.action.focusSideBar"
 	},
 	{
-		"key": "ctrl+n",
+		"key": "ctrl+m",
 		"command": "explorer.newFile"
 	},
 	{
-		"key": "ctrl+m",
+		"key": "ctrl+shift+m",
 		"command": "explorer.newFolder"
 	},
 	{
 		"key": "ctrl+r",
 		"command": "renameFile",
 		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "ctrl+y",
-		"command": "workbench.action.quickTextSearch"
 	},
 	{
 		"key": "ctrl+/",
@@ -2753,5 +2749,49 @@
 		"key": "ctrl+p",
 		"command": "-workbench.action.quickOpenNavigateNextInFilePicker",
 		"when": "inFilesPicker && inQuickOpen"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "chatEditor.action.acceptHunk",
+		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isRequestInProgress"
+	},
+	{
+		"key": "ctrl+y",
+		"command": "-chatEditor.action.acceptHunk",
+		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isRequestInProgress"
+	},
+	{
+		"key": "ctrl+shift+y",
+		"command": "chatEditor.action.accept",
+		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookEditorFocused && !chatEdits.isRequestInProgress"
+	},
+	{
+		"key": "ctrl+shift+y",
+		"command": "-chatEditor.action.accept",
+		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookEditorFocused && !chatEdits.isRequestInProgress"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "chatEditor.action.undoHunk",
+		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isRequestInProgress"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-chatEditor.action.undoHunk",
+		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isRequestInProgress"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "chatEditor.action.reject",
+		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookEditorFocused && !chatEdits.isRequestInProgress"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "-chatEditor.action.reject",
+		"when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isRequestInProgress || chatEdits.hasEditorModifications && notebookEditorFocused && !chatEdits.isRequestInProgress"
 	}
 ]

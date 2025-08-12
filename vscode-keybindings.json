@@ -21,10 +21,6 @@
 	},
 	{
 		"key": "ctrl+space",
-		"command": "workbench.action.showCommands"
-	},
-	{
-		"key": "ctrl+space",
 		"command": "workbench.action.closeQuickOpen",
 		"when": "inQuickOpen"
 	},
@@ -139,11 +135,11 @@
 		"command": "workbench.action.files.openFolder"
 	},
 	{
-		"key": "ctrl+p",
+		"key": "ctrl+space",
 		"command": "workbench.action.quickOpen"
 	},
 	{
-		"key": "ctrl+p",
+		"key": "ctrl+space",
 		"command": "workbench.action.quickOpenNavigateNextInFilePicker",
 		"when": "inFilesPicker && inQuickOpen"
 	},
@@ -196,6 +192,16 @@
 	{
 		"key": "ctrl+5",
 		"command": "workbench.action.togglePanel"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "chatEditor.action.navigateNext",
+		"when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "chatEditor.action.navigatePrevious",
+		"when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused"
 	},
 	{
 		"key": "ctrl+8",
@@ -2724,5 +2730,28 @@
 		"key": "ctrl+oem_period",
 		"command": "-problems.action.showQuickFixes",
 		"when": "problemFocus"
+	},
+	{
+		"key": "alt+f5",
+		"command": "-chatEditor.action.navigateNext",
+		"when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused"
+	},
+	{
+		"key": "shift+alt+f5",
+		"command": "-chatEditor.action.navigatePrevious",
+		"when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "-workbench.action.newWindow"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+p",
+		"command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+		"when": "inFilesPicker && inQuickOpen"
 	}
 ]
